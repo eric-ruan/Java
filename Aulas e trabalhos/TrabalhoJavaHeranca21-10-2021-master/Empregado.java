@@ -10,12 +10,20 @@ public class Empregado extends Pessoa {
     }
 
     public void setSalarioBase(double salarioBase){
-        
+        this.salarioBase = salarioBase;
+    }public double getSalarioBase(){
+        return this.salarioBase;
+    }
+
+    public void setImposto(double imposto){
+        this.imposto = imposto;
+    }public double getImposto(){
+        return this.imposto;
     }
 
     public double calculaSalario(){
         double salarioLiquido = 0;
-        salarioLiquido=this.salarioBase-this.imposto;
+        salarioLiquido = this.salarioBase - this.imposto;
         return salarioLiquido;
     }
 }
